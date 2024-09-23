@@ -1,5 +1,5 @@
 name: 06 - Contexts
-run-name: 06 - Contexts | DEBUG - ${{ inputs.debug }}
+run-name: My custom workflow run name - ${{ runner.os }}
 
 on:
   workflow_dispatch:
@@ -24,4 +24,4 @@ jobs:
           echo "DEBUG: ${{ inputs.debug }}"
 
       - name: Retrieve Variable
-        run: echo "MY_VAR: ${{ vars.MY_VAR }}"
+        run: 'echo "MY_VAR: ${{ vars.MY_VAR }}"'
