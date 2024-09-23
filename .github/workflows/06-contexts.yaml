@@ -31,7 +31,7 @@ jobs:
           echo "DEBUG: ${{ inputs.debug }}"
 
       - name: Retrieve Variable
-        run: echo "MY_VAR: ${{ vars.MY_VAR }}"
+        run: 'echo "MY_VAR: ${{ vars.MY_VAR }}"'
 
       - name: Print Env Variables - Step Level
         env:
